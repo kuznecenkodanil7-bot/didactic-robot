@@ -1,0 +1,45 @@
+name: Build LabyChat Standalone
+
+on:
+push:
+branches:
+- main
+pull_request:
+workflow_dispatch:
+
+permissions:
+contents: read
+
+jobs:
+build:
+name: Build Fabric mod
+runs-on: ubuntu-latest
+
+```
+steps:
+  - name: Checkout repository
+    uses: actions/checkout@v4
+
+  - name: Set up Java 21
+    uses: actions/setup-java@v4
+    with:
+      distribution: temurin
+      java-version: "21"
+      cache: gradle
+
+  - name: Make Gradle executable
+    run: chmod +x gradlew
+
+  - name: Validate project
+    run: python3 tools/verify_project.py
+
+  - name: Build mod
+    run: ./gradlew --no-daemon build
+
+  - name: Upload compiled JAR files
+    uses: actions/upload-artifact@v4
+    with:
+      name: labychat-standalone-jars
+      path: build/libs/*.jar
+      if-no-files-found: error
+```
