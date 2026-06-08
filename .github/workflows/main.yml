@@ -22,6 +22,24 @@ jobs:
           distribution: temurin
           java-version: '21'
 
+      - name: Show checked-out build.gradle
+        run: |
+          echo "Commit: $GITHUB_SHA"
+          echo "===== build.gradle first 40 lines ====="
+          sed -n '1,40p' build.gradle
+          echo "===== Loom plugin lines ====="
+          grep -n "fabric-loom" build.gradle || true
+
+      - name: Verify Loom plugin
+        run: |
+          grep -q "net.fabricmc.fabric-loom-remap" build.gradle || {
+            echo "ERROR: Wrong Loom plugin in build.gradle"
+            echo "Expected: net.fabricmc.fabric-loom-remap"
+            echo "Found:"
+            grep -n "fabric-loom" build.gradle || true
+            exit 1
+          }
+
       - name: Make Gradle wrapper executable
         run: chmod +x ./gradlew
 
@@ -42,3 +60,4 @@ jobs:
         with:
           name: labychat-standalone-jars
           path: build/libs/*.jar
+          
