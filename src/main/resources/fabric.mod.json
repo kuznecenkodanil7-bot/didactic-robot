@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "labychat",
+  "version": "${version}",
+  "name": "LabyChat Standalone",
+  "description": "A client-only, standalone, configurable chat renderer inspired by modern chat mods.",
+  "authors": [
+    "LabyChat Standalone contributors"
+  ],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "io.github.labychat.LabyChatClient"
+    ]
+  },
+  "mixins": [
+    "labychat.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.18.4",
+    "minecraft": "=1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  },
+  "icon": "assets/labychat/icon.png"
+}

@@ -1,0 +1,17 @@
+{
+  "key.category.labychat.main": "LabyChat Standalone",
+  "key.categories.labychat.main": "LabyChat Standalone",
+  "key.labychat.settings": "Open chat settings",
+  "key.labychat.emoji": "Open emoji panel",
+  "key.labychat.quick_reply": "Quick reply",
+  "screen.labychat.settings": "LabyChat Standalone settings",
+  "screen.labychat.log": "Chat log",
+  "screen.labychat.emoji": "Emoji panel",
+  "screen.labychat.search": "Search chat",
+  "screen.labychat.copied": "Copied: %s",
+  "screen.labychat.open_log": "Open chat log",
+  "screen.labychat.open_emoji": "Open emoji panel",
+  "menu.labychat.private_message": "Private message",
+  "menu.labychat.profile": "NameMC profile",
+  "menu.labychat.copy_name": "Copy nickname"
+}

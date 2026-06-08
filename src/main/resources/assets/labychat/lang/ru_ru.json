@@ -1,0 +1,17 @@
+{
+  "key.category.labychat.main": "LabyChat Standalone",
+  "key.categories.labychat.main": "LabyChat Standalone",
+  "key.labychat.settings": "Открыть настройки чата",
+  "key.labychat.emoji": "Открыть панель эмодзи",
+  "key.labychat.quick_reply": "Быстрый ответ",
+  "screen.labychat.settings": "Настройки LabyChat Standalone",
+  "screen.labychat.log": "Журнал чата",
+  "screen.labychat.emoji": "Панель эмодзи",
+  "screen.labychat.search": "Поиск по чату",
+  "screen.labychat.copied": "Скопировано: %s",
+  "screen.labychat.open_log": "Открыть журнал",
+  "screen.labychat.open_emoji": "Открыть эмодзи",
+  "menu.labychat.private_message": "Личное сообщение",
+  "menu.labychat.profile": "Профиль NameMC",
+  "menu.labychat.copy_name": "Копировать ник"
+}

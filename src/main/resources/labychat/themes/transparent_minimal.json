@@ -1,0 +1,12 @@
+{
+  "id": "transparent_minimal",
+  "displayName": "Transparent Minimal",
+  "backgroundColor": 536870912,
+  "alternateRowColor": 0,
+  "mentionColor": 1140916224,
+  "textColor": -1,
+  "accentColor": -1,
+  "backgroundOpacity": 0.22,
+  "alternateRows": false,
+  "animation": "FADE"
+}
